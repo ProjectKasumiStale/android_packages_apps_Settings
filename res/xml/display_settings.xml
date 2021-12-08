@@ -61,7 +61,7 @@
         <PreferenceScreen
                 android:key="display_rotation"
                 android:title="@string/display_rotation_title"
-                android:fragment="com.android.settings.aosip.DisplayRotation" />
+                android:fragment="com.android.settings.kasumi.DisplayRotation" />
 
         <com.android.settings.TimeoutListPreference
                 android:key="screen_timeout"
@@ -101,7 +101,7 @@
                 android:title="@string/tap_to_wake"
                 android:summary="@string/tap_to_wake_summary" />
 
-        <com.aosip.owlsnest.preference.GlobalSettingSwitchPreference
+        <com.kasumi.closet.preference.GlobalSettingSwitchPreference
                 android:key="wake_when_plugged_or_unplugged"
                 android:title="@string/wake_when_plugged_or_unplugged_title"
                 android:summary="@string/wake_when_plugged_or_unplugged_summary"
@@ -145,7 +145,7 @@
                 android:key="dashboard_category"
                 android:title="@string/dashboard_category">
 
-        <com.aosip.owlsnest.preference.CustomSeekBarPreference
+        <com.kasumi.closet.preference.CustomSeekBarPreference
                 android:key="dashboard_portrait_columns"
                 android:title="@string/dashboard_columns_portrait_title"
                 settings:max="3"
@@ -153,7 +153,7 @@
                 settings:units=""
                 android:persistent="false" />
 
-        <com.aosip.owlsnest.preference.CustomSeekBarPreference
+        <com.kasumi.closet.preference.CustomSeekBarPreference
                 android:key="dashboard_landscape_columns"
                 android:title="@string/dashboard_columns_landscape_title"
                 settings:max="5"
@@ -161,7 +161,7 @@
                 settings:units=""
                 android:persistent="false" />
 
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        <com.kasumi.closet.preference.SystemSettingSwitchPreference
                 android:key="disable_suggestions"
                 android:title="@string/dashboard_suggestions_title"
                 android:summaryOn="@string/summary_dashboard_suggestions_enabled"
@@ -175,7 +175,7 @@
                 android:summaryOff="@string/remove_tile_summaries_summary_disabled"
                 android:defaultValue="true" />
 
-        <com.aosip.owlsnest.preference.SystemSettingSwitchPreference
+        <com.kasumi.closet.preference.SystemSettingSwitchPreference
                 android:key="disable_dashboard_conditions"
                 android:title="@string/dashboard_conditions_title"
                 android:summaryOn="@string/summary_dashboard_conditions_enabled"

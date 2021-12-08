@@ -61,7 +61,7 @@
         <PreferenceScreen
                 android:key="volume_steps"
                 android:title="@string/volume_steps_title"
-                android:fragment="com.android.settings.aosip.VolumeSteps" />
+                android:fragment="com.android.settings.kasumi.VolumeSteps" />
 
         <!-- Interruptions -->
         <com.android.settingslib.RestrictedPreference
@@ -115,6 +115,6 @@
                 android:key="advanced_sound_settings"
                 android:title="@string/advanced_sound_title"
                 android:persistent="false"
-                android:fragment="com.android.settings.aosip.SoundSettings" />
+                android:fragment="com.android.settings.kasumi.SoundSettings" />
 
 </PreferenceScreen>

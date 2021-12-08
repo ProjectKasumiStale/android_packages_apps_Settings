@@ -141,15 +141,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Settings$OwlsNest"
-            android:label="@string/header_category_owlsnest">
+        <activity android:name=".Settings$Closet"
+            android:label="@string/header_category_closet">
             <intent-filter android:priority="4">
-                <action android:name="com.android.settings.category.owlsnest" />
+                <action android:name="com.android.settings.category.closet" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.aosip.owlsnest.recent.HAFRAppListActivity" />
+        <activity android:name="com.kasumi.closet.recent.HAFRAppListActivity" />
 
         <activity android:name=".Settings$DeviceSettings"
             android:label="@string/header_category_device">
@@ -975,12 +975,12 @@
                 android:value="true" />
         </activity>
 
-        <activity android:name="Settings$OwlsNestActivity"
-            android:label="@string/owlsnest_title"
+        <activity android:name="Settings$ClosetActivity"
+            android:label="@string/closet_title"
             android:icon="@drawable/ic_settings_illusion"
             android:taskAffinity="">
             <intent-filter android:priority="1">
-                <action android:name="aosip.owlsnest.OwlsNestSettings" />
+                <action android:name="kasumi.closet.ClosetSettings" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
@@ -993,9 +993,9 @@
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.owlsnest" />
+                android:value="com.android.settings.category.closet" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.aosip.owlsnest.OwlsNestSettings" />
+                android:value="com.kasumi.closet.ClosetSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
@@ -2818,7 +2818,7 @@
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.owlsnest" />
+                android:value="com.android.settings.category.closet" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.STweaks" />
             <meta-data android:name="com.android.settings.summary"
@@ -2841,7 +2841,7 @@
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.owlsnest" />
+                android:value="com.android.settings.category.closet" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.Substratum" />
             <meta-data android:name="com.android.settings.summary"
@@ -2864,7 +2864,7 @@
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.owlsnest" />
+                android:value="com.android.settings.category.closet" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.MagiskManager" />
             <meta-data android:name="com.android.settings.summary"
@@ -2885,7 +2885,7 @@
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.owlsnest" />
+                android:value="com.android.settings.category.closet" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.SuperUser" />
             <meta-data android:name="com.android.settings.summary"
@@ -2906,7 +2906,7 @@
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.owlsnest" />
+                android:value="com.android.settings.category.closet" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.SuperSU" />
             <meta-data android:name="com.android.settings.summary"
@@ -2929,7 +2929,7 @@
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.owlsnest" />
+                android:value="com.android.settings.category.closet" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.Toolbox" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
@@ -2947,7 +2947,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.aosip.DisplayRotation" />
+                android:value="com.android.settings.kasumi.DisplayRotation" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
@@ -3088,7 +3088,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.aosip.owlsnest.navigation.NavbarSettings" />
+                android:value="com.kasumi.closet.navigation.NavbarSettings" />
         </activity>
 
         <!-- Smartbar settings activity. -->
@@ -3100,7 +3100,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.aosip.owlsnest.navigation.SmartbarSettings" />
+                android:value="com.kasumi.closet.navigation.SmartbarSettings" />
         </activity>
 
         <!-- Fling settings activity. -->
@@ -3112,7 +3112,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.aosip.owlsnest.navigation.FlingSettings" />
+                android:value="com.kasumi.closet.navigation.FlingSettings" />
         </activity>
 
         <!-- Pulse settings activity. -->
@@ -3124,11 +3124,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.aosip.owlsnest.navigation.PulseSettings" />
+                android:value="com.kasumi.closet.navigation.PulseSettings" />
         </activity>
 
        <!-- System action picker -->
-        <activity android:name="com.aosip.owlsnest.utils.ActionPickerDialogActivity"
+        <activity android:name="com.kasumi.closet.utils.ActionPickerDialogActivity"
                 android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
                 android:label="@string/choose_action_title"
                 android:excludeFromRecents="true">
@@ -3138,7 +3138,7 @@
         </activity>
 
        <!-- Icon pack picker -->
-        <activity android:name="com.aosip.owlsnest.utils.IconPickerActivity"
+        <activity android:name="com.kasumi.closet.utils.IconPickerActivity"
                 android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
                 android:label="@string/icon_pack_picker_dialog_title"
                 android:excludeFromRecents="true">
@@ -3149,7 +3149,7 @@
 
 
         <!-- Icon picker proxy for gallery -->
-        <activity android:name="com.aosip.owlsnest.utils.IconPickerGallery"
+        <activity android:name="com.kasumi.closet.utils.IconPickerGallery"
             android:theme="@*android:style/Theme.Material.Light.Dialog.Alert"
             android:label="@string/icon_pack_picker_dialog_title"
             android:excludeFromRecents="true">
@@ -3159,7 +3159,7 @@
         </activity>
 
        <!-- Icon pack grid -->
-        <activity android:name="com.aosip.owlsnest.utils.IconPackGridActivity"
+        <activity android:name="com.kasumi.closet.utils.IconPackGridActivity"
                 android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -3175,7 +3175,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.aosip.owlsnest.qssettings.TileCategory" />
+                android:value="com.kasumi.closet.qssettings.TileCategory" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@string/tile_category" />
         </activity>
@@ -3190,7 +3190,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.aosip.owlsnest.navigation.PieSettings" />
+                android:value="com.kasumi.closet.navigation.PieSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@string/pie_settings" />
         </activity>
@@ -3204,7 +3204,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.aosip.owlsnest.buttons.ButtonSettings" />
+                android:value="com.kasumi.closet.buttons.ButtonSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@string/hardware_keys_title" />
         </activity>

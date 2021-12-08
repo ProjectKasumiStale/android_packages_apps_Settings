@@ -101,7 +101,7 @@ import com.android.settings.inputmethod.SpellCheckersSettings;
 import com.android.settings.inputmethod.UserDictionaryList;
 import com.android.settings.localepicker.LocaleListEditor;
 import com.android.settings.location.LocationSettings;
-import com.android.settings.aosip.DisplayRotation;
+import com.android.settings.kasumi.DisplayRotation;
 import com.android.settings.nfc.AndroidBeam;
 import com.android.settings.nfc.PaymentSettings;
 import com.android.settings.notification.AppNotificationSettings;
@@ -139,14 +139,14 @@ import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 
 import java.net.URISyntaxException;
-import com.aosip.owlsnest.OwlsNestSettings;
-import com.aosip.owlsnest.buttons.ButtonSettings;
-import com.aosip.owlsnest.navigation.FlingSettings;
-import com.aosip.owlsnest.navigation.NavbarSettings;
-import com.aosip.owlsnest.navigation.SmartbarSettings;
-import com.aosip.owlsnest.navigation.PieSettings;
-import com.aosip.owlsnest.navigation.PulseSettings;
-import com.aosip.owlsnest.qssettings.TileCategory;
+import com.kasumi.closet.ClosetSettings;
+import com.kasumi.closet.buttons.ButtonSettings;
+import com.kasumi.closet.navigation.FlingSettings;
+import com.kasumi.closet.navigation.NavbarSettings;
+import com.kasumi.closet.navigation.SmartbarSettings;
+import com.kasumi.closet.navigation.PieSettings;
+import com.kasumi.closet.navigation.PulseSettings;
+import com.kasumi.closet.qssettings.TileCategory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -394,7 +394,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
             ExpandedDesktopPreferenceFragment.class.getName(),
-            OwlsNestSettings.class.getName(),
+            ClosetSettings.class.getName(),
             NavbarSettings.class.getName(),
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),

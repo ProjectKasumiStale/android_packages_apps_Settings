@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.aosip;
+package com.android.settings.kasumi;
 
 import java.util.HashMap;
 import java.util.HashSet;

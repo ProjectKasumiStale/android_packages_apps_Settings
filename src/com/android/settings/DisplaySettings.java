@@ -50,10 +50,10 @@ import android.util.Log;
 import com.android.internal.app.NightDisplayController;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
-import com.android.internal.util.aosip.aosipUtils;
+import com.android.internal.util.kasumi.kasumiUtils;
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.accessibility.ToggleFontSizePreferenceFragment;
-import com.android.settings.aosip.DisplayRotation;
+import com.android.settings.kasumi.DisplayRotation;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -61,7 +61,7 @@ import com.android.settings.search.Indexable;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedPreference;
 
-import com.aosip.owlsnest.preference.CustomSeekBarPreference;
+import com.kasumi.closet.preference.CustomSeekBarPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -145,7 +145,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         final Activity activity = getActivity();
         final ContentResolver resolver = activity.getContentResolver();
-        final boolean isDeviceDozeInstalled = aosipUtils.isPackageInstalled(activity, "com.cyanogenmod.settings.doze");
+        final boolean isDeviceDozeInstalled = kasumiUtils.isPackageInstalled(activity, "com.cyanogenmod.settings.doze");
 
         addPreferencesFromResource(R.xml.display_settings);
 
